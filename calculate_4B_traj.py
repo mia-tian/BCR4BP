@@ -1,3 +1,18 @@
+# =============================================================================
+# File: calculate_4B_traj.py
+# Author: Mia Tian
+# Created: 7/2023
+#
+# Description:
+#     Computes and analyzes trajectories in the Circular Restricted Three-Body
+#     Problem (CR3BP) and the Earth-Sun-Moon Four-Body Problem (BCR4BP). 
+#     Includes functions to calculate libration points, Jacobi constants, 
+#     state transition matrices, monodromy matrices, stable/unstable manifolds, 
+#     Poincaré maps, and trajectory visualization in 2D/3D. Uses the
+#     Koon-Lo-Marsden-Ross method to calculate initial guesses in CR3BP for the
+#     BCR4BP.
+# =============================================================================
+
 import numpy as np
 from numpy import linalg as LA
 from scipy.integrate import solve_ivp
