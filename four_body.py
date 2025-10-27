@@ -1,3 +1,13 @@
+# =============================================================================
+# File: four_body.py
+# Author: Mia Tian
+# Created: 7/2023
+#
+# Description: 
+#     Implements the Bi-circular Restricted Four Body Problem and plots
+#     resulting trajectory.
+# =============================================================================
+
 import math
 import numpy as np
 from scipy.integrate import solve_ivp
