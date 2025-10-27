@@ -1,3 +1,27 @@
+# =============================================================================
+# File: CR3BP.py
+# Author: Mia Tian
+# Created: 7/2023
+#
+# Description: 
+#     Implements the Circular Restricted Three-Body Problem (CR3BP) dynamics and
+#     associated analysis tools for the Earth–Moon system or similar two-body
+#     configurations. This script integrates the nonlinear equations of motion,
+#     computes state transition matrices, evaluates stability via monodromy and
+#     Jacobi constants, and visualizes orbital trajectories, manifolds, and
+#     Poincaré maps.
+#
+#     Key capabilities include:
+#         - Integration of CR3BP equations of motion using solve_ivp
+#         - Linearized dynamics via A-matrix and STM propagation
+#         - Computation of Jacobi constants and libration points
+#         - Stability analysis using eigenvalue decomposition
+#         - Generation of 2D/3D trajectory plots and Poincaré sections
+#
+#     This module can be used for analyzing periodic orbits, studying invariant
+#     manifolds, and exploring stability characteristics in the CR3BP framework.
+# =============================================================================
+
 import numpy as np
 from numpy import linalg as LA
 from scipy.integrate import solve_ivp
